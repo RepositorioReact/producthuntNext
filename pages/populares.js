@@ -4,9 +4,9 @@ import DetallesProducto from '../components/layout/DetallesProducto';
 import useProductos from '../hooks/useProductos';
 
 
-const Home = () => {
+const Populares = () => {
 
-  const {productos} = useProductos('creado');//toma el orden que se va a tener a la hora de mostrar producos, en creado viene la fecha que tiene un producto en la bd
+  const {productos} = useProductos('votos');//toma el orden que se va a tener a la hora de mostrar producos, en votos viene la cantidad de votos que tiene un producto en la bd
 
   return(
     <div>
@@ -28,4 +28,4 @@ const Home = () => {
   );
 }
 
-export default Home;
+export default Populares;
